@@ -19,7 +19,7 @@
     if (self != nil)
     {
         [self setFemaleName:@"Becky"];
-        [self setNumberOfCats:22];
+        [self setNumberOfCats:2];
         [self setNumberOfBoyfriends:12];
         [self setKids:@"Yes"];
         [self setPersonality:@"Crap"];
@@ -33,7 +33,7 @@
 {
    if (personality == @"Crap")
    {
-       NSLog(@"F this");
+       return;
    }
 }
 

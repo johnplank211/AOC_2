@@ -54,9 +54,9 @@
     if (firstDate != nil)
     {
         [firstDate calculateSecondDate];
-        //[firstDate setNumberOfBoyfriends:3];
+        [firstDate setNumberOfBoyfriends:3];
         
-        firstDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 100.0f, 320.0f, 60.0f)];
+        firstDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 100.0f, 320.0f, 50.0f)];
         if (firstDateLabel != nil)
         {
             //
@@ -103,14 +103,14 @@
     if (firstDate != nil)
     {
         [secondDate calculateSecondDate];
-        //[firstDate setNumberOfBoyfriends:3];
+        [secondDate setNumberOfCats:4];
         
-        secondDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 220.0f, 320.0f, 60.0f)];
+        secondDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 220.0f, 320.0f, 50.0f)];
         if (secondDateLabel != nil)
         {
             //
             // NSString - Information about Julie
-            secondDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, Self Checks Phone:%i, Boyfriends:%i ", secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.numCheckPhone, secondDate.numberOfBoyfriends];
+            secondDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, Checks Phone:%i, Boyfriends:%i ", secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.numCheckPhone, secondDate.numberOfBoyfriends];
             //
             // Label setup
             secondDateLabel.numberOfLines = 4;

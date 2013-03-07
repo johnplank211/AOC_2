@@ -20,6 +20,7 @@ typedef enum{
     JESSICA
 } femaleClass;
 
+@property int dateTimeMin;
 @property (strong) NSString *femaleName;
 @property (strong) NSString *kids;
 @property int numberOfCats;
