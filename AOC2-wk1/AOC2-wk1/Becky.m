@@ -31,7 +31,10 @@
 
 -(void)calculateSecondDate
 {
-    //[self setSecondDateProspect: (selfAbsorbedScale + NumberOfBoyfriends)];
+   if (personality == @"Crap")
+   {
+       NSLog(@"F this");
+   }
 }
 
 @end

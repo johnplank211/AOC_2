@@ -12,6 +12,9 @@
 {
     UILabel *title_Label;
     UILabel *firstDateLabel;
+    UILabel *secondDateLabel;
+    UILabel *startDateLabel;
+    UILabel *startDate2Label;
 }
 
 @end

@@ -17,7 +17,8 @@
     self = [super init];
     if (self != nil)
     {
-        [self setNumberOfCats:0];
+        [self setFemaleName:@"Julie"];
+        [self setNumberOfCats:7];
         [self setNumberOfBoyfriends:1];
         [self setKids:@"No"];
         [self setNumCheckMirror:9];
