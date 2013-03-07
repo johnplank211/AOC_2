@@ -11,7 +11,7 @@
 @interface Jessica : checklistBase
 
 @property int numTalksAboutEx;
-@property NSString *allAboutHer;
+@property int numSaysThankYou;
 
 -(void)calculateSecondDate;
 

@@ -11,7 +11,7 @@
 @interface Becky : checklistBase
 
 
-@property NSString *personality;
+@property int piercings;
 @property int numCheckPhone;
 
 -(void)calculateSecondDate;

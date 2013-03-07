@@ -10,7 +10,7 @@
 
 @interface Julie : checklistBase
 
-@property NSString *selfAbsorbed;
+@property int numSaysHot;
 @property int numCheckMirror;
 
 

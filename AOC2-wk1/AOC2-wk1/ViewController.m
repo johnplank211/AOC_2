@@ -61,7 +61,7 @@
         {
             //
             // NSString - Information about Becky 
-            firstDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Personality:%@, Cats:%i, Excuse:%@, Boyfriends:%i ", firstDate.femaleName, firstDate.kids, firstDate.personality, firstDate.numberOfCats, firstDate.excuse, firstDate.numberOfBoyfriends];
+            firstDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%i, Piercings:%i, Cats:%i, Excuse:%@, Boyfriends:%i ", firstDate.femaleName, firstDate.kids, firstDate.piercings, firstDate.numberOfCats, firstDate.excuse, firstDate.numberOfBoyfriends];
             //
             // Label setup
             firstDateLabel.numberOfLines = 3;
@@ -110,7 +110,7 @@
         {
             //
             // NSString - Information about Julie
-            secondDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, Selfabsorbed:%@, Boyfriends:%i Excuse:%@ ", secondDate.dateTimeMin, secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.selfAbsorbed, secondDate.numberOfBoyfriends, secondDate.excuse];
+            secondDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%i, Checks the mirror:%i, Cats:%i, Says hot:%i, Boyfriends:%i Excuse:%@ ", secondDate.dateTimeMin, secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.numSaysHot, secondDate.numberOfBoyfriends, secondDate.excuse];
             //
             // Label setup
             secondDateLabel.numberOfLines = 4;
@@ -160,7 +160,7 @@
         {
             //
             // NSString - Information about Jessica
-            thirdDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, About her:%@, Boyfriends:%i Excuse:%@ ", thirdDate.dateTimeMin, thirdDate.femaleName, thirdDate.kids, thirdDate.numTalksAboutEx, thirdDate.numberOfCats, thirdDate.allAboutHer, thirdDate.numberOfBoyfriends, thirdDate.excuse];
+            thirdDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%i, Checks the mirror:%i, Cats:%i, Says thanks:%i, Boyfriends:%i Excuse:%@ ", thirdDate.dateTimeMin, thirdDate.femaleName, thirdDate.kids, thirdDate.numTalksAboutEx, thirdDate.numberOfCats, thirdDate.numSaysThankYou, thirdDate.numberOfBoyfriends, thirdDate.excuse];
             //
             // Label setup
             thirdDateLabel.numberOfLines = 4;

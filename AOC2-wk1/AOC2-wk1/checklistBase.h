@@ -22,10 +22,11 @@ typedef enum{
 
 @property int dateTimeMin;
 @property (strong) NSString *femaleName;
-@property (strong) NSString *kids;
+@property int kids;
 @property int numberOfCats;
 @property int numberOfBoyfriends;
 @property (strong) NSString *excuse;
+//@property (strong) NSString *femaleClass;
 
 
 

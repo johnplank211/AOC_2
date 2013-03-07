@@ -10,7 +10,7 @@
 
 @implementation Julie
 
-@synthesize numCheckMirror, selfAbsorbed;
+@synthesize numCheckMirror, numSaysHot;
 
 -(id)init
 {
@@ -20,10 +20,10 @@
         [self setDateTimeMin:60];
         [self setFemaleName:@"Julie"];
         [self setNumberOfCats:7];
-        [self setNumberOfBoyfriends:1];
-        [self setKids:@"No"];
+        [self setNumberOfBoyfriends:7];
+        [self setKids:5];
         [self setNumCheckMirror:9];
-        [self setSelfAbsorbed:@"Very"];
+        [self setNumSaysHot:89];
         [self setExcuse:@""];
         
     }
@@ -34,7 +34,7 @@
 {
     //[self setSecondDateProspect: (selfAbsorbedScale + NumberOfBoyfriends)];
     
-    if ((selfAbsorbed == @"Very") && (numCheckMirror > 5))
+    if ((numSaysHot > 2) && (numCheckMirror > 5))
     {
         [self setExcuse:@"Tummy hurts"];
         [self setDateTimeMin:20];

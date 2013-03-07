@@ -10,7 +10,7 @@
 
 @implementation Jessica
 
-@synthesize numTalksAboutEx, allAboutHer;
+@synthesize numTalksAboutEx, numSaysThankYou;
 
 -(id)init
 {
@@ -21,8 +21,8 @@
         [self setFemaleName:@"Jessica"];
         [self setNumberOfCats:0];
         [self setNumberOfBoyfriends:1];
-        [self setKids:@"No"];
-        [self setAllAboutHer:@"No"];
+        [self setKids:0];
+        [self setNumSaysThankYou:10];
         [self setNumTalksAboutEx:0];
         [self setExcuse:@""];
         
@@ -32,7 +32,7 @@
 
 -(void)calculateSecondDate
 {
-    if ((numTalksAboutEx < 1) && (allAboutHer == @"No"))
+    if ((numTalksAboutEx < 1) && (numSaysThankYou > 4))
     {
         [self setExcuse:@"None"];
         [self setDateTimeMin:120];
