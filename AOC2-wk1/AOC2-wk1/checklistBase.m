@@ -10,12 +10,14 @@
 
 @implementation checklistBase
 
+@synthesize kids, femaleName, numberOfBoyfriends, numberOfCats;
+
 -(id)init
 {
     self = [ super init];
     if (self != nil)
     {
-        [self setKids:nil];
+        [self setKids:@""];
         [self setNumberOfCats:0];
         [self setNumberOfBoyfriends:0];
     }
@@ -28,6 +30,7 @@
 -(void)calculateSecondDate
 {
     //[self setKids: numberOfBoyfriends + numberOfCats];
+    
 }
 
 

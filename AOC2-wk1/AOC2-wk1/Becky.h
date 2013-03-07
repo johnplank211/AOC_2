@@ -10,8 +10,9 @@
 
 @interface Becky : checklistBase
 
-@property int personalityScale;
-@property int ;
+
+@property NSString *personality;
+@property NSString *selfAbsorbed;
 
 -(void)calculateSecondDate;
 

@@ -10,7 +10,7 @@
 
 @implementation Becky
 
-@synthesize personalityScale, selfAbsorbedScale;
+@synthesize personality, selfAbsorbed;
 
 
 -(id)init
@@ -18,12 +18,12 @@
     self = [super init];
     if (self != nil)
     {
-        [self setSecondDateProspect:4];
-        [self setNumberOfCats:2];
-        [self setNumberOfBoyfriends:5];
-        [self setKids:@"Yes I would love to have a lot"];
-        [self setPersonalityScale:6];
-        [self setSelfAbsorbedScale:3];
+        [self setFemaleName:@"Becky"];
+        [self setNumberOfCats:22];
+        [self setNumberOfBoyfriends:12];
+        [self setKids:@"Yes"];
+        [self setPersonality:@"Crap"];
+        [self setSelfAbsorbed:@"Very"];
         
     }
     return self;
@@ -31,7 +31,7 @@
 
 -(void)calculateSecondDate
 {
-    [self setSecondDateProspect: (NumberOfCats + personalityScale + selfAbsorbedScale + NumberOfBoyfriends)];
+    //[self setSecondDateProspect: (selfAbsorbedScale + NumberOfBoyfriends)];
 }
 
 @end

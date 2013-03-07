@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    UILabel *title_Label;
+    UILabel *firstDateLabel;
+}
 
 @end

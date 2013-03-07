@@ -11,19 +11,21 @@
 @interface checklistBase : NSObject
 
 {
-    int femaleName;
+    int femaleClass;
 }
 
 typedef enum{
     BECKY,
     JULIE,
     JESSICA
-} femaleName;
+} femaleClass;
 
-
-@property NSString *kids;
+@property (strong) NSString *femaleName;
+@property (strong) NSString *kids;
 @property int numberOfCats;
 @property int numberOfBoyfriends;
+
+
 
 -(id)init;
 

@@ -20,7 +20,7 @@
     {
         return [[Julie alloc] init];
     }
-    if (femaleName JESSICA)
+    if (femaleName == JESSICA)
     {
         return [[Jessica alloc] init];
     }
