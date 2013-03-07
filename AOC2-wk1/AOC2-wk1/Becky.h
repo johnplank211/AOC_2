@@ -12,7 +12,7 @@
 
 
 @property NSString *personality;
-@property NSString *selfAbsorbed;
+@property int numCheckPhone;
 
 -(void)calculateSecondDate;
 

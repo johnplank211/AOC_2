@@ -61,7 +61,7 @@
         {
             //
             // NSString - Information about Becky 
-            firstDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Personality:%@, Cats:%i, Self Absorbed:%@, Boyfriends:%i ", firstDate.femaleName, firstDate.kids, firstDate.personality, firstDate.numberOfCats, firstDate.selfAbsorbed, firstDate.numberOfBoyfriends];
+            firstDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Personality:%@, Cats:%i, Excuse:%@, Boyfriends:%i ", firstDate.femaleName, firstDate.kids, firstDate.personality, firstDate.numberOfCats, firstDate.excuse, firstDate.numberOfBoyfriends];
             //
             // Label setup
             firstDateLabel.numberOfLines = 3;
@@ -100,17 +100,17 @@
 /////////
     
     Julie *secondDate = (Julie*)[dateFactory createDate:JULIE];
-    if (firstDate != nil)
+    if (secondDate != nil)
     {
         [secondDate calculateSecondDate];
         [secondDate setNumberOfCats:4];
         
-        secondDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 220.0f, 320.0f, 50.0f)];
+        secondDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 220.0f, 320.0f, 80.0f)];
         if (secondDateLabel != nil)
         {
             //
             // NSString - Information about Julie
-            secondDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, Checks Phone:%i, Boyfriends:%i ", secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.numCheckPhone, secondDate.numberOfBoyfriends];
+            secondDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, Selfabsorbed:%@, Boyfriends:%i Excuse:%@ ", secondDate.dateTimeMin, secondDate.femaleName, secondDate.kids, secondDate.numCheckMirror, secondDate.numberOfCats, secondDate.selfAbsorbed, secondDate.numberOfBoyfriends, secondDate.excuse];
             //
             // Label setup
             secondDateLabel.numberOfLines = 4;
@@ -128,6 +128,56 @@
             secondDateLabel.backgroundColor = [UIColor blackColor];
         }
         [self.view addSubview:secondDateLabel];
+    }
+
+    
+    ///////////
+    
+    Jessica *startThirdDate = (Jessica*)[dateFactory createDate:JESSICA];
+    
+    startDate3Label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 310.0f, 320.0f, 40.0f)];
+    if (startDate3Label != nil)
+    {
+        startDate3Label.text = [NSString stringWithFormat:@"Well heres my first date with %@ lets so how she does.", startThirdDate.femaleName];
+        startDate3Label.numberOfLines = 3;
+        startDate3Label.textColor = [UIColor whiteColor];
+        startDate3Label.textAlignment = NSTextAlignmentCenter;
+        startDate3Label.backgroundColor = [UIColor blackColor];
+        
+        [self.view addSubview:startDate3Label];
+    }
+    
+    /////////
+    
+    Jessica *thirdDate = (Jessica*)[dateFactory createDate:JESSICA];
+    if (thirdDate != nil)
+    {
+        [thirdDate calculateSecondDate];
+        [thirdDate setNumberOfCats:1];
+        
+        thirdDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 370.0f, 320.0f, 80.0f)];
+        if (secondDateLabel != nil)
+        {
+            //
+            // NSString - Information about Jessica
+            thirdDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%@, Checks the mirror:%i, Cats:%i, About her:%@, Boyfriends:%i Excuse:%@ ", thirdDate.dateTimeMin, thirdDate.femaleName, thirdDate.kids, thirdDate.numTalksAboutEx, thirdDate.numberOfCats, thirdDate.allAboutHer, thirdDate.numberOfBoyfriends, thirdDate.excuse];
+            //
+            // Label setup
+            thirdDateLabel.numberOfLines = 4;
+            thirdDateLabel.textColor = [UIColor whiteColor];
+            thirdDateLabel.textAlignment = NSTextAlignmentCenter;
+            thirdDateLabel.backgroundColor = [UIColor blackColor];
+        }
+        else
+        {
+            //
+            // Error message
+            thirdDateLabel.text = [NSString stringWithFormat:@"She's not talking."];
+            thirdDateLabel.textColor = [UIColor redColor];
+            thirdDateLabel.textAlignment = NSTextAlignmentCenter;
+            thirdDateLabel.backgroundColor = [UIColor blackColor];
+        }
+        [self.view addSubview:thirdDateLabel];
     }
 
     

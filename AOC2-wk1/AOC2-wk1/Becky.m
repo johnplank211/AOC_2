@@ -10,7 +10,7 @@
 
 @implementation Becky
 
-@synthesize personality, selfAbsorbed;
+@synthesize personality, numCheckPhone;
 
 
 -(id)init
@@ -18,12 +18,14 @@
     self = [super init];
     if (self != nil)
     {
+        [self setDateTimeMin:60];
         [self setFemaleName:@"Becky"];
-        [self setNumberOfCats:2];
+        [self setNumberOfCats:22];
         [self setNumberOfBoyfriends:12];
         [self setKids:@"Yes"];
         [self setPersonality:@"Crap"];
-        [self setSelfAbsorbed:@"Very"];
+        [self setNumCheckPhone:16];
+        [self setExcuse:@""];
         
     }
     return self;
@@ -31,10 +33,15 @@
 
 -(void)calculateSecondDate
 {
-   if (personality == @"Crap")
+   if ((personality == @"Crap") && (numCheckPhone > 3))
    {
-       return;
+       [self setExcuse:@"Mom is sick"];
+       [self setDateTimeMin:20];
    }
+    else
+    {
+        [self setExcuse:@"None yet"];
+    }
 }
 
 @end

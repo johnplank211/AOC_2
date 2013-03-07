@@ -10,7 +10,7 @@
 
 @implementation checklistBase
 
-@synthesize kids, femaleName, numberOfBoyfriends, numberOfCats, dateTimeMin;
+@synthesize kids, femaleName, numberOfBoyfriends, numberOfCats, dateTimeMin, excuse;
 
 -(id)init
 {
@@ -21,6 +21,7 @@
         [self setKids:@""];
         [self setNumberOfCats:0];
         [self setNumberOfBoyfriends:0];
+        [self setExcuse:@""];
     }
     return self;
 }
@@ -30,9 +31,9 @@
 
 -(void)calculateSecondDate
 {
-    [self setDateTimeMin:60];
-    [self setDateTimeMin: numberOfBoyfriends + numberOfCats - dateTimeMin];
-    NSLog(@"dateTimeMin %i", dateTimeMin);
+    
+    [self setDateTimeMin:0];
+        
     
 }
 

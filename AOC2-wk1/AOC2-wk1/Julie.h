@@ -10,8 +10,9 @@
 
 @interface Julie : checklistBase
 
+@property NSString *selfAbsorbed;
 @property int numCheckMirror;
-@property int numCheckPhone;
+
 
 -(void)calculateSecondDate;
 

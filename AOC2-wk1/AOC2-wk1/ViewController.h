@@ -15,6 +15,8 @@
     UILabel *secondDateLabel;
     UILabel *startDateLabel;
     UILabel *startDate2Label;
+    UILabel *thirdDateLabel;
+    UILabel *startDate3Label;
 }
 
 @end

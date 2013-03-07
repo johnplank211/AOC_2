@@ -25,6 +25,7 @@ typedef enum{
 @property (strong) NSString *kids;
 @property int numberOfCats;
 @property int numberOfBoyfriends;
+@property (strong) NSString *excuse;
 
 
 
