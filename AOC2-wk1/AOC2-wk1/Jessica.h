@@ -10,11 +10,10 @@
 
 @interface Jessica : checklistBase
 
+
+//custom property
 @property int numTalksAboutEx;
 @property int numSaysThankYou;
-
--(void)calculateSecondDate;
-
 
 
 @end

@@ -10,11 +10,12 @@
 
 @interface Julie : checklistBase
 
+
+//custom property
 @property int numSaysHot;
 @property int numCheckMirror;
 
 
--(void)calculateSecondDate;
 
 
 

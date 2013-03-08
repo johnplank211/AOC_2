@@ -13,7 +13,7 @@
 {
     int femaleClass;
 }
-
+//setting up the dates as names instead of numbers
 typedef enum{
     BECKY,
     JULIE,
@@ -26,7 +26,7 @@ typedef enum{
 @property int numberOfCats;
 @property int numberOfBoyfriends;
 @property (strong) NSString *excuse;
-//@property (strong) NSString *femaleClass;
+
 
 
 

@@ -32,7 +32,8 @@
 
 -(void)calculateSecondDate
 {
-    [self setDateTimeMin: kids + numberOfCats + numberOfBoyfriends];
+    [self setDateTimeMin:60];
+    
 }
 
 

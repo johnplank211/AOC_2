@@ -32,9 +32,7 @@
 
 -(void)calculateSecondDate
 {
-    //[self setSecondDateProspect: (selfAbsorbedScale + NumberOfBoyfriends)];
-    
-    if ((numSaysHot > 2) && (numCheckMirror > 5))
+        if ((numSaysHot > 2) && (numCheckMirror > 5))
     {
         [self setExcuse:@"Tummy hurts"];
         [self setDateTimeMin:20];

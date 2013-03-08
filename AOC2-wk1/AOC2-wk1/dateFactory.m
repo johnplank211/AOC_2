@@ -10,7 +10,8 @@
 
 @implementation dateFactory
 
-+(checklistBase *)createDate:(int)femaleName
+//This is where the magic of date creations happen
++(checklistBase *)createDate:(int)femaleName 
 {
     if (femaleName == BECKY)
     {

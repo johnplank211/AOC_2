@@ -15,14 +15,20 @@
 
 @implementation ViewController
 
+
+//-----project-1------// how long should the date last and will there be another???
+
+
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = [UIColor blueColor];
+
+///not sure if it needed a title but seems like it should
     
     title_Label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 30.0f)];
     if (title_Label != nil)
     {
-        title_Label.text = @"Stay or go?";
+        title_Label.text = @"Date Rater"; //I crack me up
         title_Label.textColor = [UIColor whiteColor];
         title_Label.textAlignment = NSTextAlignmentCenter;
         title_Label.backgroundColor = [UIColor blackColor];
@@ -32,7 +38,7 @@
     
     
     
-///////////
+/////////// SubClass Becky 
    Becky *startFirstDate = (Becky*)[dateFactory createDate:BECKY];
     
     startDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 320.0f, 40.0f)];
@@ -48,9 +54,8 @@
     }
     
     
-///////////
-    Becky *firstDate = (Becky*)[dateFactory createDate:BECKY];
-    
+
+    Becky *firstDate = (Becky*)[dateFactory createDate:BECKY]; //create sub Becky
     if (firstDate != nil)
     {
         [firstDate calculateSecondDate];
@@ -61,7 +66,7 @@
         {
             //
             // NSString - Information about Becky 
-            firstDateLabel.text = [NSString stringWithFormat:@"Name:%@, Kids:%i, Piercings:%i, Cats:%i, Excuse:%@, Boyfriends:%i ", firstDate.femaleName, firstDate.kids, firstDate.piercings, firstDate.numberOfCats, firstDate.excuse, firstDate.numberOfBoyfriends];
+            firstDateLabel.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Kids:%i, Piercings:%i, Cats:%i, Excuse:%@, Boyfriends:%i ", firstDate.dateTimeMin, firstDate.femaleName, firstDate.kids, firstDate.piercings, firstDate.numberOfCats, firstDate.excuse, firstDate.numberOfBoyfriends];
             //
             // Label setup
             firstDateLabel.numberOfLines = 3;
@@ -81,8 +86,7 @@
             [self.view addSubview:firstDateLabel];
     }
     
-///////////
-    
+///////////SubClass Julie
     Julie *startSecondDate = (Julie*)[dateFactory createDate:JULIE];
     
     startDate2Label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 170.0f, 320.0f, 40.0f)];
@@ -97,13 +101,12 @@
         [self.view addSubview:startDate2Label];
     }
     
-/////////
-    
-    Julie *secondDate = (Julie*)[dateFactory createDate:JULIE];
+   
+    Julie *secondDate = (Julie*)[dateFactory createDate:JULIE]; //create sub julie
     if (secondDate != nil)
     {
         [secondDate calculateSecondDate];
-        [secondDate setNumberOfCats:4];
+        [secondDate setNumberOfCats:4]; //Change number of cats she thinks she will come across less crazy :-)
         
         secondDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 220.0f, 320.0f, 80.0f)];
         if (secondDateLabel != nil)
@@ -131,9 +134,8 @@
     }
 
     
-    ///////////
-    
-    Jessica *startThirdDate = (Jessica*)[dateFactory createDate:JESSICA];
+///////////SubClass Jessica     
+    Jessica *startThirdDate = (Jessica*)[dateFactory createDate:JESSICA]; 
     
     startDate3Label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 310.0f, 320.0f, 40.0f)];
     if (startDate3Label != nil)
@@ -147,13 +149,13 @@
         [self.view addSubview:startDate3Label];
     }
     
-    /////////
+
     
-    Jessica *thirdDate = (Jessica*)[dateFactory createDate:JESSICA];
+    Jessica *thirdDate = (Jessica*)[dateFactory createDate:JESSICA]; //create sub jessica
     if (thirdDate != nil)
     {
         [thirdDate calculateSecondDate];
-        [thirdDate setNumberOfCats:1];
+        [thirdDate setNumberOfCats:1]; // Changes NumOfCats. she doesn't want to sound like she doesn't like cats so she says she has one.
         
         thirdDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 370.0f, 320.0f, 80.0f)];
         if (secondDateLabel != nil)

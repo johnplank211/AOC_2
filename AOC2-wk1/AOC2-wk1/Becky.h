@@ -10,11 +10,11 @@
 
 @interface Becky : checklistBase
 
-
+//custom property
 @property int piercings;
 @property int numCheckPhone;
 
--(void)calculateSecondDate;
+
 
 
 @end
