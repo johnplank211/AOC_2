@@ -41,7 +41,7 @@
 		B44773E516E7C21E006CA168 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B44773E816E7C21E006CA168 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B44773EA16E7C21E006CA168 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B44773EB16E7C21E006CA168 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B44773EB16E7C21E006CA168 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		B44773F216E7D62D006CA168 /* dateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateFactory.h; sourceTree = "<group>"; };
 		B44773F316E7D62D006CA168 /* dateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateFactory.m; sourceTree = "<group>"; };
 		B44773F516E7D66B006CA168 /* checklistBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checklistBase.h; sourceTree = "<group>"; };
@@ -52,6 +52,7 @@
 		B44773FC16E7D6BD006CA168 /* Julie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Julie.m; sourceTree = "<group>"; };
 		B44773FE16E7D6EE006CA168 /* Jessica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jessica.h; sourceTree = "<group>"; };
 		B44773FF16E7D6EE006CA168 /* Jessica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jessica.m; sourceTree = "<group>"; };
+		B4BE44C516EF88FE006D784F /* DiskInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 				B44773FC16E7D6BD006CA168 /* Julie.m */,
 				B44773FE16E7D6EE006CA168 /* Jessica.h */,
 				B44773FF16E7D6EE006CA168 /* Jessica.m */,
+				B4BE44C516EF88FE006D784F /* DiskInterface.h */,
 			);
 			path = "AOC2-wk1";
 			sourceTree = "<group>";
@@ -320,6 +322,7 @@
 				B44773F116E7C21E006CA168 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

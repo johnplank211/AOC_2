@@ -10,13 +10,25 @@
 
 @interface ViewController : UIViewController
 {
-    UILabel *title_Label;
-    UILabel *firstDateLabel;
-    UILabel *secondDateLabel;
-    UILabel *startDateLabel;
-    UILabel *startDate2Label;
-    UILabel *thirdDateLabel;
-    UILabel *startDate3Label;
+    IBOutlet UILabel *title_Label;
+    IBOutlet UILabel *firstDateLabel;
+    IBOutlet UILabel *secondDateLabel;
+    //UILabel *startDateLabel;
+    //UILabel *startDate2Label;
+    IBOutlet UILabel *thirdDateLabel;
+    //UILabel *startDate3Label;
+    IBOutlet UITextField *textField;
+    IBOutlet UIButton *BeckyButton;
+    IBOutlet UIButton *JulieButton;
+    IBOutlet UIButton *JessicaButton;
+    IBOutlet UILabel *dateTimeButton;
+    IBOutlet UIStepper *stepControl;
+    
 }
+
+-(IBAction)onClick:(id)sender;
+-(IBAction)calculate:(id)sender;
+-(IBAction)stepChange:(id)sender;
+-(IBAction)segmentChange:(id)sender;
 
 @end
