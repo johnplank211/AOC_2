@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "dateFactory.h"
+#import "ChecklistBase.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad
 {
-    //title_Label.text = @"Suck it tribeck";
+    title_Label.text = @"Suck it tribeck";
     //textField.text = @"Put here big boy";
     
     
@@ -228,18 +229,71 @@
 
 -(IBAction)calculate:(id)sender
 {
-    //int _calculate = stepControl.value;
-    //textField.text = @"eatmwkjdei";
+    int calculateDate = stepControl.value;
     
-    if (BeckyButton.enabled == false)
+    if (BeckyButton.enabled == FALSE)
     {
     Becky *firstDate = (Becky*)[dateFactory createDate:BECKY];
-        if (firstDateLabel != nil)
+        
+        if (firstDate != nil)
+            [firstDate calculateSecondDate];
+            int timeLeft = firstDate.dateTimeMin - firstDate.numberOfCats + calculateDate;
+        
         {
-            textField.text = [NSString stringWithFormat:@"Clock:%i, Name:%@, Boyfriends:%i ", firstDate.dateTimeMin, firstDate.femaleName,
-                              firstDate.numberOfBoyfriends];
+                textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
+                              timeLeft, firstDate.femaleName];
+                stepControl.value = 30;
+        
+        }
+        if (timeLeft < 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!                 %@",
+                                  firstDate.excuse]; 
         }
     }
+    else if (JulieButton.enabled == FALSE)
+    {
+        Julie *secondDate = (Julie*)[dateFactory createDate:JULIE];
+        
+        if (secondDate != nil)
+            [secondDate calculateSecondDate];
+        int timeLeft = secondDate.dateTimeMin - secondDate.numberOfCats + calculateDate;
+        
+        {
+            textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
+                              timeLeft, secondDate.femaleName];
+            stepControl.value = 30;
+            
+        }
+        if (timeLeft < 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!                 %@",
+                                  secondDate.excuse];
+        }
+ 
+    }
+    else if (JessicaButton.enabled == FALSE)
+    {
+        Jessica *thirdDate = (Jessica*)[dateFactory createDate:JESSICA];
+        
+        if (thirdDate != nil)
+            [thirdDate calculateSecondDate];
+        int timeLeft = thirdDate.dateTimeMin - thirdDate.numberOfCats + calculateDate;
+        
+        {
+            textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
+                              timeLeft, thirdDate.femaleName];
+            stepControl.value = 30;
+            
+        }
+        if (timeLeft < 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!  %@",
+                                  thirdDate.excuse];
+        }
+        
+    }
+
 }
 
 

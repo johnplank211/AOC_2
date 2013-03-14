@@ -17,14 +17,14 @@
     self = [super init];
     if (self != nil)
     {
-        [self setDateTimeMin:0];
+        [self setDateTimeMin:60];
         [self setFemaleName:@"Jessica"];
         [self setNumberOfCats:0];
         [self setNumberOfBoyfriends:1];
         [self setKids:0];
         [self setNumSaysThankYou:10];
-        [self setNumTalksAboutEx:0];
-        [self setExcuse:@""];
+        [self setNumTalksAboutEx:2];
+        [self setExcuse:@"Oh no left the iron on"];
         
     }
     return self;
@@ -32,16 +32,9 @@
 
 -(void)calculateSecondDate
 {
-    if ((numTalksAboutEx > 1) && (numSaysThankYou > 4))
-    {
-        [self setExcuse:@"I got the runs see yea"];
-        [self setDateTimeMin:120];
-    }
-    else 
-    {
-        [self setExcuse:@"None needed"];
-        [self setDateTimeMin:120];
-    }
+
+   [self setDateTimeMin:(numSaysThankYou * numTalksAboutEx)];
+
 }
 
 

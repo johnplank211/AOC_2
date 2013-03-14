@@ -18,7 +18,7 @@
     if (self != nil)
     {
         [self setFemaleName:@""];
-        [self setDateTimeMin:60];
+        [self setDateTimeMin:0];
         [self setKids:0];
         [self setNumberOfCats:0];
         [self setNumberOfBoyfriends:0];
