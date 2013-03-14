@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "dateFactory.h"
 #import "ChecklistBase.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -22,12 +22,17 @@
 
 - (void)viewDidLoad
 {
-    title_Label.text = @"Suck it tribeck";
+    //title_Label.text = @"Suck it tribeck";
     //textField.text = @"Put here big boy";
     
     
     self.view.backgroundColor = [UIColor grayColor];
-//
+    JohnImage = [UIImage imageNamed:@"John.jpg"];
+    
+    
+    
+    
+    //
 /////not sure if it needed a title but seems like it should
 //    
 //    title_Label = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 30.0f)];
@@ -257,7 +262,7 @@
         
         if (secondDate != nil)
             [secondDate calculateSecondDate];
-        int timeLeft = secondDate.dateTimeMin - secondDate.numberOfCats + calculateDate;
+        int timeLeft = secondDate.dateTimeMin - secondDate.numberOfBoyfriends + calculateDate;
         
         {
             textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
@@ -278,7 +283,7 @@
         
         if (thirdDate != nil)
             [thirdDate calculateSecondDate];
-        int timeLeft = thirdDate.dateTimeMin - thirdDate.numberOfCats + calculateDate;
+        int timeLeft = thirdDate.dateTimeMin - thirdDate.numTalksAboutEx + calculateDate;
         
         {
             textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
@@ -296,6 +301,23 @@
 
 }
 
+-(IBAction)info:(id)sender
+{
+    //
+    // Opens SecondView (Developer Information)
+    SecondViewController *viewControl = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    if (viewControl != nil)
+    {
+        [UIImage imageNamed:@"JohnImage.jpg"];
+        //
+        // Changes scLogo back to their class image
+        //        zergImage.image = zergChange;
+        //        terranImage.image = terranChange;
+        //        protossImage.image = protossChange;
+        [self presentViewController:viewControl animated:YES completion:nil];
+        NSLog(@"Information button pressed");
+    }
+}
 
 
 
@@ -334,6 +356,7 @@
         }
     }
 }
+
 
 
 

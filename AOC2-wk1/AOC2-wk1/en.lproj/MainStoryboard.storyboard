@@ -49,7 +49,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" autoresizesSubviews="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-Pf-BJn">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-Pf-BJn">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="73" id="DHd-7M-gJn"/>
                                 </constraints>
@@ -66,9 +66,9 @@
                                     <action selector="onClick:" destination="2" eventType="touchUpInside" id="1Bu-2j-iMh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" autoresizesSubviews="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-mJ-hfg">
+                            <button autoresizesSubviews="NO" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-mJ-hfg">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="GV5-nH-Ab6"/>
+                                    <constraint firstAttribute="width" constant="73" id="nUf-o2-AoB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Julie">
@@ -83,7 +83,7 @@
                                     <action selector="onClick:" destination="2" eventType="touchUpInside" id="0h0-5M-5rq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" autoresizesSubviews="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I1-Qr-Kg4">
+                            <button autoresizesSubviews="NO" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I1-Qr-Kg4">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="73" id="HEP-cA-uRR"/>
                                 </constraints>
@@ -144,6 +144,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-6x-6RH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="gcc-e7-Sla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="info:" destination="2" eventType="touchUpInside" id="K76-hU-HKa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.4259259259" blue="0.4259259259" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -154,6 +170,7 @@
                             <constraint firstItem="WDg-lS-2V6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3A3-xk-tnN"/>
                             <constraint firstItem="DeZ-ih-fFi" firstAttribute="trailing" secondItem="bDV-Gw-rhB" secondAttribute="trailing" type="default" id="3IQ-tw-Rme"/>
                             <constraint firstItem="WAa-bZ-9Cs" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="3hy-E0-1zb"/>
+                            <constraint firstItem="G7G-6x-6RH" firstAttribute="centerX" secondItem="WAa-bZ-9Cs" secondAttribute="centerX" type="default" id="5c0-Ig-aTE"/>
                             <constraint firstItem="WDg-lS-2V6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="CWi-1j-4Xu"/>
                             <constraint firstItem="OWE-cz-Mhl" firstAttribute="baseline" secondItem="bDV-Gw-rhB" secondAttribute="baseline" type="default" id="DMB-Gd-nEC"/>
                             <constraint firstItem="X6G-dQ-JDd" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="HtR-4J-cgD"/>
@@ -163,17 +180,19 @@
                             <constraint firstAttribute="trailing" secondItem="7I1-Qr-Kg4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OzU-X7-yM2"/>
                             <constraint firstItem="qQu-7N-pSv" firstAttribute="leading" secondItem="Wjd-mJ-hfg" secondAttribute="leading" type="default" id="PJI-tR-CT7"/>
                             <constraint firstAttribute="bottom" secondItem="FXc-I0-IIx" secondAttribute="bottom" constant="166" id="WKg-XN-1fY"/>
+                            <constraint firstItem="G7G-6x-6RH" firstAttribute="leading" secondItem="Wjd-mJ-hfg" secondAttribute="leading" type="default" id="YqG-Wy-DJJ"/>
                             <constraint firstItem="7I1-Qr-Kg4" firstAttribute="baseline" secondItem="Wjd-mJ-hfg" secondAttribute="baseline" type="default" id="atP-9j-nUc"/>
+                            <constraint firstItem="G7G-6x-6RH" firstAttribute="trailing" secondItem="Wjd-mJ-hfg" secondAttribute="trailing" type="default" id="bU9-pH-t6y"/>
                             <constraint firstItem="DeZ-ih-fFi" firstAttribute="centerX" secondItem="Wjd-mJ-hfg" secondAttribute="centerX" type="default" id="fnd-ya-xSx"/>
                             <constraint firstItem="bF3-Pf-BJn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="226" id="hlT-Xy-tau"/>
                             <constraint firstItem="Wjd-mJ-hfg" firstAttribute="baseline" secondItem="bF3-Pf-BJn" secondAttribute="baseline" type="default" id="hop-Qv-3lC"/>
-                            <constraint firstItem="WDg-lS-2V6" firstAttribute="centerX" secondItem="Wjd-mJ-hfg" secondAttribute="centerX" type="default" id="kjQ-Y9-bV6"/>
                             <constraint firstItem="DeZ-ih-fFi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="169" id="l6G-7q-nwW"/>
                             <constraint firstItem="bF3-Pf-BJn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lSg-b1-RYt"/>
                             <constraint firstAttribute="bottom" secondItem="WDg-lS-2V6" secondAttribute="bottom" constant="72" id="lgM-Af-GLc"/>
                             <constraint firstItem="qQu-7N-pSv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="106" id="qdt-NX-XBC"/>
                             <constraint firstItem="WAa-bZ-9Cs" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rou-xv-lQO"/>
                             <constraint firstItem="WAa-bZ-9Cs" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="s3O-Xl-I5F"/>
+                            <constraint firstAttribute="bottom" secondItem="G7G-6x-6RH" secondAttribute="bottom" constant="30" id="zEj-KX-aEs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -188,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="-45"/>
+            <point key="canvasLocation" x="96" y="-68"/>
         </scene>
     </scenes>
     <classes>
@@ -199,11 +218,13 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="calculate:"/>
+                <relationship kind="action" name="info:"/>
                 <relationship kind="action" name="onClick:"/>
                 <relationship kind="action" name="segmentChange:"/>
                 <relationship kind="action" name="stepChange:"/>
                 <relationship kind="outlet" name="BeckyButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="JessicaButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="JohnImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="JulieButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dateTimeButton" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="firstDateLabel" candidateClass="UILabel"/>

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "dateFactory.h"
 
 @interface ViewController : UIViewController
 {
+    IBOutlet UIImageView *JohnImage;
     IBOutlet UILabel *title_Label;
     IBOutlet UILabel *firstDateLabel;
     IBOutlet UILabel *secondDateLabel;
@@ -31,5 +33,6 @@
 -(IBAction)calculate:(id)sender;
 -(IBAction)stepChange:(id)sender;
 -(IBAction)segmentChange:(id)sender;
+-(IBAction)info:(id)sender;
 
 @end
