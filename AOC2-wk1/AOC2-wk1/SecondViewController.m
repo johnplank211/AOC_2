@@ -34,7 +34,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    // Loads text into textfield
+    // displays creator
     devInfo.text = @"John J Plank";
     
     [super viewWillAppear:animated];
@@ -50,8 +50,7 @@
 // Back Button
 -(IBAction)infoClose:(id)sender
 {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    NSLog(@"Back button pressed");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

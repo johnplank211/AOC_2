@@ -32,9 +32,7 @@
 
 -(void)calculateSecondDate
 {
-
    [self setDateTimeMin:(numSaysThankYou * numTalksAboutEx)];
-
 }
 
 

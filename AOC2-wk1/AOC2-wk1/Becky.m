@@ -33,9 +33,7 @@
 
 -(void)calculateSecondDate
 {
-
     [self setDateTimeMin:(numCheckPhone - piercings)];
-
 }
 
 @end

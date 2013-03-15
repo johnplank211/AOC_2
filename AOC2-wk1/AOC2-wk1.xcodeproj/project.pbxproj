@@ -59,7 +59,6 @@
 		B458013A16F25BCD007EBC5E /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B458013B16F25BCD007EBC5E /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B470111416F265EB0049C8FF /* IMG_0111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0111.jpg; sourceTree = "<group>"; };
-		B4BE44C516EF88FE006D784F /* DiskInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +122,6 @@
 				B44773FC16E7D6BD006CA168 /* Julie.m */,
 				B44773FE16E7D6EE006CA168 /* Jessica.h */,
 				B44773FF16E7D6EE006CA168 /* Jessica.m */,
-				B4BE44C516EF88FE006D784F /* DiskInterface.h */,
 				B458013816F24F4D007EBC5E /* SecondViewController.xib */,
 				B458013A16F25BCD007EBC5E /* SecondViewController.h */,
 				B458013B16F25BCD007EBC5E /* SecondViewController.m */,
