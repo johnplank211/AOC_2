@@ -105,7 +105,7 @@
         {
             textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
                               timeLeft, secondDate.femaleName];
-            stepControl.value = 30;
+            stepControl.value = 0;
             
         }
         if (timeLeft < 0)
@@ -131,7 +131,7 @@
         {
             textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
                               timeLeft, thirdDate.femaleName];
-            stepControl.value = 30;
+            stepControl.value = 0;
             
         }
         if (timeLeft < 0)
