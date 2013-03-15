@@ -90,7 +90,7 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"",
+            warning_Label.text = [NSString stringWithFormat:@"%@",
                                   firstDate.excuse];
         }
     }
@@ -115,7 +115,7 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"",
+            warning_Label.text = [NSString stringWithFormat:@"%@",
                                   secondDate.excuse];
         }
  
@@ -141,7 +141,7 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"",
+            warning_Label.text = [NSString stringWithFormat:@"%@",
                                   thirdDate.excuse];
         }
         
