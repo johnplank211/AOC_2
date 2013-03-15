@@ -13,17 +13,10 @@
 {
     IBOutlet UIImageView *JohnImage;
     IBOutlet UILabel *title_Label;
-    IBOutlet UILabel *firstDateLabel;
-    IBOutlet UILabel *secondDateLabel;
-    //UILabel *startDateLabel;
-    //UILabel *startDate2Label;
-    IBOutlet UILabel *thirdDateLabel;
-    //UILabel *startDate3Label;
     IBOutlet UITextField *textField;
     IBOutlet UIButton *BeckyButton;
     IBOutlet UIButton *JulieButton;
     IBOutlet UIButton *JessicaButton;
-    IBOutlet UILabel *dateTimeButton;
     IBOutlet UILabel *warning_Label;
     IBOutlet UIStepper *stepControl;
     
@@ -31,7 +24,6 @@
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)calculate:(id)sender;
--(IBAction)stepChange:(id)sender;
 -(IBAction)segmentChange:(id)sender;
 -(IBAction)info:(id)sender;
 

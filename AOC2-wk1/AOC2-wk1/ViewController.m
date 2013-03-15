@@ -40,7 +40,7 @@
     {
         if (button.tag == 0)
         {
-            BeckyButton.enabled = NO;
+            BeckyButton.enabled = false;
             JulieButton.enabled = true;
             JessicaButton.enabled = true;
             textField.text = @"Becky:";
@@ -63,13 +63,14 @@
     }
 }
 
+
 //creats and calculates date time from who ever was selected
 //Plus added stepper that when plus or minus is hit then hit the calculate button again for new results 
--(IBAction)calculate:(id)sender
+-(IBAction)calculate:(id)sender;
 {
     int calculateDate = stepControl.value;
     
-    if (BeckyButton.enabled == FALSE)
+    if (BeckyButton.enabled == false)
     {
     Becky *firstDate = (Becky*)[dateFactory createDate:BECKY];
         
@@ -90,11 +91,10 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"%@",
-                                  firstDate.excuse];
+            warning_Label.text = [NSString string];
         }
     }
-    else if (JulieButton.enabled == FALSE)
+    else if (JulieButton.enabled == false)
     {
         Julie *secondDate = (Julie*)[dateFactory createDate:JULIE];
         
@@ -115,12 +115,11 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"%@",
-                                  secondDate.excuse];
+            warning_Label.text = [NSString string];
         }
  
     }
-    else if (JessicaButton.enabled == FALSE)
+    else if (JessicaButton.enabled == false)
     {
         Jessica *thirdDate = (Jessica*)[dateFactory createDate:JESSICA];
         
@@ -141,8 +140,7 @@
         }
         if (timeLeft > 0)
         {
-            warning_Label.text = [NSString stringWithFormat:@"%@",
-                                  thirdDate.excuse];
+            warning_Label.text = [NSString string];
         }
         
     }
@@ -151,7 +149,7 @@
 
 
 // opens SecondView with Dev Info and a cute pic
--(IBAction)info:(id)sender
+-(IBAction)info:(id)sender;
 {
     SecondViewController *viewControl = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     if (viewControl != nil)
@@ -172,7 +170,7 @@
 
 
 //changes the color of the background
--(IBAction)segmentChange:(id)sender
+-(IBAction)segmentChange:(id)sender;
 {
     UISegmentedControl *BGChange = (UISegmentedControl*)sender;
     if (BGChange != nil)

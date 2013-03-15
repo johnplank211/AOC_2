@@ -18,9 +18,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="stepChange:" destination="2" eventType="touchUpInside" id="rKk-X4-XeL"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Date Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyg-3L-9Ug">
                                 <color key="backgroundColor" red="0.1616031883652273" green="0.5" blue="0.025292989389373244" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,17 +218,12 @@
                 <relationship kind="action" name="info:"/>
                 <relationship kind="action" name="onClick:"/>
                 <relationship kind="action" name="segmentChange:"/>
-                <relationship kind="action" name="stepChange:"/>
                 <relationship kind="outlet" name="BeckyButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="JessicaButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="JohnImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="JulieButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dateTimeButton" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="firstDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="secondDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="stepControl" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="thirdDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="title_Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="warning_Label" candidateClass="UILabel"/>
             </relationships>
