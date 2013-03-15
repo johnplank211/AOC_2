@@ -63,6 +63,29 @@
     }
 }
 
+///Added stepper to add points to the date
+-(IBAction)stepPoints:(id)sender;
+
+{
+    //stepper variable
+    int points = stepControl.value;    
+    
+    //display point bonuses
+    if (BeckyButton.enabled == false)
+    {
+        textField.text = [NSString stringWithFormat:@"Date points added %d", points];
+    }
+    
+    if (JulieButton.enabled == false)
+    {
+        textField.text = [NSString stringWithFormat:@"Date points added %d", points];
+    }
+    
+    if (JessicaButton.enabled == false)
+    {
+        textField.text = [NSString stringWithFormat:@"Date points added %d", points];
+    }
+}
 
 //creats and calculates date time from who ever was selected
 //Plus added stepper that when plus or minus is hit then hit the calculate button again for new results 
@@ -79,8 +102,8 @@
             int timeLeft = firstDate.dateTimeMin + firstDate.numberOfCats + calculateDate;
         
         {
-                textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
-                              timeLeft, firstDate.femaleName];
+                textField.text = [NSString stringWithFormat:@"Time added %d:, Time left:%i, Name:%@",
+                              calculateDate, timeLeft, firstDate.femaleName];
                 stepControl.value = 0;
         
         }
@@ -103,8 +126,8 @@
         int timeLeft = secondDate.dateTimeMin - secondDate.numberOfBoyfriends + calculateDate;
         
         {
-            textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
-                              timeLeft, secondDate.femaleName];
+            textField.text = [NSString stringWithFormat:@"Time added %d:, Time left:%i,Name:%@",
+                              calculateDate, timeLeft, secondDate.femaleName];
             stepControl.value = 0;
             
         }
@@ -128,8 +151,8 @@
         int timeLeft = thirdDate.dateTimeMin - thirdDate.numTalksAboutEx + calculateDate;
         
         {
-            textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
-                              timeLeft, thirdDate.femaleName];
+            textField.text = [NSString stringWithFormat:@"Time added %d:, Time left:%i,Name:%@",
+                              calculateDate, timeLeft, thirdDate.femaleName];
             stepControl.value = 0;
             
         }

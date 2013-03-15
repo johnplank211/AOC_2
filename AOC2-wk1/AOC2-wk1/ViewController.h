@@ -26,5 +26,6 @@
 -(IBAction)calculate:(id)sender;
 -(IBAction)segmentChange:(id)sender;
 -(IBAction)info:(id)sender;
+-(IBAction)stepPoints:(id)sender;
 
 @end
