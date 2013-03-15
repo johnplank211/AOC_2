@@ -64,7 +64,7 @@
 }
 
 //creats and calculates date time from who ever was selected
-//Plus stepper that when plus or minus is hit then hit the calculate button again for new results 
+//Plus added stepper that when plus or minus is hit then hit the calculate button again for new results 
 -(IBAction)calculate:(id)sender
 {
     int calculateDate = stepControl.value;
@@ -75,18 +75,23 @@
         
         if (firstDate != nil)
             [firstDate calculateSecondDate];
-            int timeLeft = firstDate.dateTimeMin - firstDate.numberOfCats + calculateDate;
+            int timeLeft = firstDate.dateTimeMin + firstDate.numberOfCats + calculateDate;
         
         {
                 textField.text = [NSString stringWithFormat:@"Time left:%i,Name:%@",
                               timeLeft, firstDate.femaleName];
-                stepControl.value = 30;
+                stepControl.value = 0;
         
         }
         if (timeLeft < 0)
         {
             warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!                 %@",
                                   firstDate.excuse]; 
+        }
+        if (timeLeft > 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"",
+                                  firstDate.excuse];
         }
     }
     else if (JulieButton.enabled == FALSE)
@@ -108,6 +113,11 @@
             warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!                 %@",
                                   secondDate.excuse];
         }
+        if (timeLeft > 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"",
+                                  secondDate.excuse];
+        }
  
     }
     else if (JessicaButton.enabled == FALSE)
@@ -127,6 +137,11 @@
         if (timeLeft < 0)
         {
             warning_Label.text = [NSString stringWithFormat:@"Crazy Alert!!!  %@",
+                                  thirdDate.excuse];
+        }
+        if (timeLeft > 0)
+        {
+            warning_Label.text = [NSString stringWithFormat:@"",
                                   thirdDate.excuse];
         }
         
