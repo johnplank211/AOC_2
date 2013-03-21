@@ -12,13 +12,13 @@
 @interface ViewController : UIViewController <SecondViewDelegate>
 {
     IBOutlet UITextView *eventField; // TextView
-    IBOutlet UIButton *addEvent;
+    IBOutlet UIButton *addEvent; // Event button
     id<SecondViewDelegate> delegate;
 }
 
 
 @property(strong) id<SecondViewDelegate> delegate;
+
 -(IBAction)addEvent:(id)sender;
-//-(void)eventSaved:(NSString*)_eventSaved dateSaved:(NSDate *)_dateSaved;
 
 @end

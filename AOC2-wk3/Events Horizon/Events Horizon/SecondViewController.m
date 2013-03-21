@@ -37,7 +37,7 @@
 	// Do any additional setup after loading the view.
 }
 
-// Keyboard (show and hide)
+// Keyboard up and down
 - (void)viewWillAppear:(BOOL)animated
 {
     // Show
@@ -64,7 +64,6 @@
 -(IBAction)closeKeyboard:(id)sender
 {
     [eventText resignFirstResponder];
-    NSLog(@"Close Keyboard Pressed");
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +72,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-// Save (Button and Save text in text field)
+// Save Button Save text and date in text field
 -(IBAction)_save:(id)sender
 {
     // Save settings here
@@ -91,18 +90,17 @@
         // Runs if there is no text in the field
         if ([eventText.text length] == 0)
         {
-            // Alert pops up if no information in text field has been entered.
-            UIAlertView *_eventAlert = [[UIAlertView alloc] initWithTitle:@"OH NO!" message:@"You need to create an event for it to save, silly." delegate:nil cancelButtonTitle:@"Continue" otherButtonTitles:nil];
+            // Alert no info.
+            UIAlertView *_eventAlert = [[UIAlertView alloc] initWithTitle:@"You forgot something!" message:@"I guess you have no life since you have no event to save." delegate:nil cancelButtonTitle:@"Continue" otherButtonTitles:nil];
             if (_eventAlert != nil)
             {
                 [_eventAlert show];
             }
         }
-        // Runs if there has been text entered into the field.
+        // Runs if there texts.
         else if ([eventText.text length] >= 1)
         {
-            NSLog(@"Save was pressed");
-            NSLog(@"%@", _eventSaved);
+            
         }
         
         // Grabs _eventSaved and _dateSaved
@@ -114,11 +112,10 @@
 
 
 
-// became first responder (delegate for textfield)
-- (void)textFieldDidBeginEditing:(UITextField *)textField // Did Begin Editing
+// became first responder delegate for textfield
+- (void)textFieldDidBeginEditing:(UITextField *)textField //  Editing
 {
     textField.text = [NSString stringWithFormat:@""]; // clear out text when pressed
-    NSLog(@"textField touched");
 }
 
 

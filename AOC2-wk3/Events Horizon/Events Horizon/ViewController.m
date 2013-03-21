@@ -38,16 +38,14 @@
     if (viewControl != nil)        
     {
         viewControl.delegate = self;
-        //[UIImage imageNamed:@"JohnImage.jpg"];
         [self presentViewController:viewControl animated:YES completion:nil];
-        NSLog(@"Add Event Button Pressed");
     }
 }
 
 
 -(void)eventSaved:(NSString*)_eventSaved dateSaved:(NSDate *)_dateSaved
 {
-    // \n represents a new line (spaces) between events
+    // \n adds spaces between events
     NSString *eventText = [NSString stringWithFormat:@"\n\n%@\n%@", _eventSaved, _dateSaved];
     
     if ([eventField.text isEqualToString:@""])
