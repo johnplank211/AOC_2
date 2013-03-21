@@ -85,6 +85,7 @@
         {
             // Populates text field
             _eventSaved = eventText.text;
+            _dateSaved = _date.date;
             
         }
         // Runs if there is no text in the field
