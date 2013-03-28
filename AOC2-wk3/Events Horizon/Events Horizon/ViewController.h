@@ -12,13 +12,13 @@
 @interface ViewController : UIViewController <SecondViewDelegate>
 {
     IBOutlet UITextView *eventField; // TextView
-    IBOutlet UIButton *addEvent; // Event button
-    id<SecondViewDelegate> delegate;
+    IBOutlet UILabel *addevent2;//event swipe
+    UISwipeGestureRecognizer *rightSwiper;
 }
 
 
 @property(strong) id<SecondViewDelegate> delegate;
 
--(IBAction)addEvent:(id)sender;
+-(IBAction)saveEvent:(id)sender;
 
 @end

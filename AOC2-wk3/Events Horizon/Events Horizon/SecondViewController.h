@@ -22,13 +22,16 @@
     IBOutlet UITextField *eventText; // TextField
     IBOutlet UIDatePicker *_date; // Date picker
     NSString *_eventSaved; //event string
-    NSDate *_dateSaved; //date 
+    IBOutlet UILabel *saveEvent;
+    NSDate *_dateSaved; //date
+    UISwipeGestureRecognizer *leftSwiper;
     id<SecondViewDelegate> delegate; // Creates SecondViewDelegate
+    
 }
 
 -(IBAction)closeKeyboard:(id)sender; //close
 -(IBAction)_picker:(id)sender;  //picker
--(IBAction)_save:(id)sender; // save
+
 
 // Allows you to set the delegate from outside
 @property (strong) id<SecondViewDelegate> delegate;

@@ -16,8 +16,18 @@
 @implementation ViewController
 @synthesize delegate;
 
+
+//show users saved data
 - (void)viewDidLoad
 {
+    NSUserDefaults *_userEventSaves = [NSUserDefaults standardUserDefaults];
+    if (_userEventSaves != nil)
+    {
+        NSString *_eventSaved = [_userEventSaves objectForKey:@"eventData"];
+        
+        eventField.text = _eventSaved;
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -28,21 +38,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-
-
--(IBAction)addEvent:(id)sender;
+- (void)viewDidAppear:(BOOL)animated
 {
-    SecondViewController *viewControl = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    if (viewControl != nil)        
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [addevent2 addGestureRecognizer:rightSwiper];
+    [super viewDidAppear:animated];
+}
+
+//add event swipe toake to the second view
+- (void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        viewControl.delegate = self;
-        [self presentViewController:viewControl animated:YES completion:nil];
+        SecondViewController *viewControl = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+            if (viewControl != nil)
+           
+                viewControl.delegate = self;
+                [self presentViewController:viewControl animated:YES completion:nil];
+
     }
 }
 
 
+//shows saved data from the second view
 -(void)eventSaved:(NSString*)_eventSaved dateSaved:(NSDate *)_dateSaved
 {
     // \n adds spaces between events
@@ -57,6 +76,23 @@
         eventField.text = [eventField.text stringByAppendingString:eventText];
     }
 }
+
+
+//save button action. 
+-(IBAction)saveEvent:(id)sender
+{
+    NSUserDefaults *_eventSaved = [NSUserDefaults standardUserDefaults];
+    if (_eventSaved != nil)
+    {
+        NSString *saveEvent = eventField.text;
+        
+        [_eventSaved setObject:saveEvent forKey:@"eventData"];
+        
+        // Saves the data
+        [_eventSaved synchronize];
+    }
+}
+
 
 
 @end
